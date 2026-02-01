@@ -22,4 +22,25 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Dynamic Mobile CTA Button
+    const navList = document.querySelector('.nav-list');
+    const headerBtn = document.querySelector('.header-actions .btn');
+
+    if (navList && headerBtn) {
+        if (!navList.querySelector('.mobile-cta-item')) {
+            const li = document.createElement('li');
+            li.className = 'mobile-cta-item';
+            // Clone the button
+            const btnClone = headerBtn.cloneNode(true);
+            btnClone.style.marginTop = '10px';
+            btnClone.style.textAlign = 'center';
+            btnClone.classList.remove('btn-primary');
+            btnClone.classList.add('btn-primary'); // Ensure class persists logic
+            // Actually, keep styles simple.
+
+            li.appendChild(btnClone);
+            navList.appendChild(li);
+        }
+    }
 });
