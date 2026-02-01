@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Our Academic Services - Write Steps Solution">
+    <title>Services | Write Steps Solution</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .page-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            color: white;
+            font-size: 3rem;
+        }
+
+        .service-detail-card {
+            background: white;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 40px;
+            margin-bottom: 40px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .service-icon-large {
+            font-size: 5rem;
+            color: var(--primary-color);
+            text-align: center;
+            background: var(--accent-color);
+            padding: 40px;
+            border-radius: var(--radius);
+        }
+
+        @media (max-width: 768px) {
+            .service-detail-card {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                Write Steps <span class="accent">Solution</span>
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="services.html" class="nav-link active">Services</a></li>
+                    <li><a href="blog.html" class="nav-link">Resources</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="consultation.html" class="btn btn-primary">Book Consultation</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p>Expert support for every stage of your academic journey</p>
+        </div>
+    </div>
+
+    <main class="section-padding">
+        <div class="container">
+
+            <div class="service-detail-card" id="thesis">
+                <div class="service-icon-large">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <div class="service-content">
+                    <h3>Thesis & Dissertation Guidance</h3>
+                    <p>Writing a thesis is a monumental task. We provide step-by-step mentoring, from refining your
+                        research topic to structuring your chapters and preparing for your final defense. We ensure your
+                        work is academically rigorous and clearly presented.</p>
+                    <ul class="feature-list" style="margin: 20px 0;">
+                        <li><i class="fas fa-check"></i> Topic Selection & Proposal Writing</li>
+                        <li><i class="fas fa-check"></i> Chapter Structuring</li>
+                        <li><i class="fas fa-check"></i> Editing & Proofreading</li>
+                    </ul>
+                    <a href="consultation.html?service=thesis" class="btn btn-primary">Get Guidance</a>
+                </div>
+            </div>
+
+            <div class="service-detail-card" id="literature">
+                <div class="service-icon-large">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="service-content">
+                    <h3>Literature Review</h3>
+                    <p>A strong literature review anchors your research. We help you conduct a systematic review,
+                        identifying key themes, gaps, and theoretical frameworks relevant to your study.</p>
+                    <a href="consultation.html?service=literature" class="btn btn-primary">Get Help</a>
+                </div>
+            </div>
+
+            <div class="service-detail-card" id="research">
+                <div class="service-icon-large">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <div class="service-content">
+                    <h3>Research Mentoring</h3>
+                    <p>Personalized one-on-one sessions to discuss your research methodology, design, and implementation
+                        strategies. </p>
+                    <a href="consultation.html?service=research" class="btn btn-primary">Find a Mentor</a>
+                </div>
+            </div>
+
+            <div class="service-detail-card" id="analysis">
+                <div class="service-icon-large">
+                    <i class="fas fa-chart-pie"></i>
+                </div>
+                <div class="service-content">
+                    <h3>Data Analysis</h3>
+                    <p>Struggling with statistics? Our experts are proficient in SPSS, R, Python, NVivo, and other
+                        analytical tools. We help you interpret your data and present findings accurately.</p>
+                    <a href="consultation.html?service=analysis" class="btn btn-primary">Get Analysis Help</a>
+                </div>
+            </div>
+
+            <div class="service-detail-card" id="publication">
+                <div class="service-icon-large">
+                    <i class="fas fa-newspaper"></i>
+                </div>
+                <div class="service-content">
+                    <h3>Journal Publication Support</h3>
+                    <p>We guide you through the complex process of publishing in high-impact journals. From selecting
+                        the right journal to addressing reviewer comments, we are with you.</p>
+                    <a href="consultation.html?service=publication" class="btn btn-primary">Start Publishing</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3>Write Steps <span class="accent">Solution</span></h3>
+                <p>Empowering students to achieve academic excellence through expert guidance and specialized support.
+                </p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="consultation.html">Book Consultation</a></li>
+                    <li><a href="blog.html">Resources</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p><i class="fas fa-envelope"></i> info@writestepssolution.com</p>
+                <p><i class="fab fa-whatsapp"></i> +1 234 567 890</p>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2024 Write Steps Solution. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Academic Resources and Tips - Write Steps Solution">
+    <title>Resources | Write Steps Solution</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .page-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .blog-card {
+            background: white;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .blog-image {
+            height: 200px;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #aaa;
+            font-size: 3rem;
+        }
+
+        .blog-content {
+            padding: 25px;
+        }
+
+        .blog-category {
+            font-size: 0.8rem;
+            color: var(--primary-color);
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .blog-title {
+            font-size: 1.25rem;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .blog-card a {
+            color: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                Write Steps <span class="accent">Solution</span>
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="blog.html" class="nav-link active">Resources</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="consultation.html" class="btn btn-primary">Book Consultation</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Academic Resources</h1>
+            <p>Guides, tips, and insights for your research journey</p>
+        </div>
+    </div>
+
+    <main class="section-padding">
+        <div class="container">
+            <div class="blog-grid">
+                <!-- Blog Post 1 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <i class="fas fa-pen-fancy"></i>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Thesis Writing</span>
+                        <h3 class="blog-title"><a href="#">How to Write a Compelling Thesis Statement</a></h3>
+                        <p>Learn the secrets to crafting a thesis statement that guides your entire research paper
+                            effectively.</p>
+                        <a href="#" class="text-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Data Analysis</span>
+                        <h3 class="blog-title"><a href="#">Choosing the Right Statistical Test</a></h3>
+                        <p>A simple guide to understanding when to use t-tests, ANOVA, or regression analysis.</p>
+                        <a href="#" class="text-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <i class="fas fa-book-reader"></i>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Research</span>
+                        <h3 class="blog-title"><a href="#">Structuring Your Literature Review</a></h3>
+                        <p>Tips for organizing your sources and identifying gaps in existing research.</p>
+                        <a href="#" class="text-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3>Write Steps <span class="accent">Solution</span></h3>
+                <p>Empowering students to achieve academic excellence through expert guidance and specialized support.
+                </p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="consultation.html">Book Consultation</a></li>
+                    <li><a href="blog.html">Resources</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p><i class="fas fa-envelope"></i> info@writestepssolution.com</p>
+                <p><i class="fab fa-whatsapp"></i> +1 234 567 890</p>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2024 Write Steps Solution. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

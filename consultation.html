@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book a Consultation - Write Steps Solution">
+    <title>Book Consultation | Write Steps Solution</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .form-container {
+            background: white;
+            padding: 50px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            max-width: 800px;
+            margin: -50px auto 0;
+            position: relative;
+            z-index: 10;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius);
+            font-family: inherit;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.1);
+        }
+
+        textarea.form-control {
+            height: 150px;
+            resize: vertical;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .form-container {
+                padding: 30px;
+            }
+        }
+
+        .page-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 80px 0 100px;
+            /* Extra padding for overlap */
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                Write Steps <span class="accent">Solution</span>
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="blog.html" class="nav-link">Resources</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="consultation.html" class="btn btn-primary">Book Consultation</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Expert Consultation</h1>
+            <p>Tell us about your project and get a quote</p>
+        </div>
+    </div>
+
+    <main class="section-padding" style="padding-top: 0;">
+        <div class="container">
+            <div class="form-container">
+                <form action="#" method="POST" id="consultationForm" enctype="multipart/form-data">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="fullname" class="form-label">Full Name</label>
+                            <input type="text" id="fullname" name="fullname" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="whatsapp" class="form-label">WhatsApp Number</label>
+                            <input type="tel" id="whatsapp" name="whatsapp" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="university" class="form-label">University / Subject</label>
+                            <input type="text" id="university" name="university" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="service" class="form-label">Service Required</label>
+                            <select id="service" name="service" class="form-control" required>
+                                <option value="">Select a Service</option>
+                                <option value="thesis">Thesis Guidance</option>
+                                <option value="literature">Literature Review</option>
+                                <option value="research">Research Mentoring</option>
+                                <option value="analysis">Data Analysis</option>
+                                <option value="publication">Journal Publication</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="deadline" class="form-label">Deadline (Optional)</label>
+                            <input type="date" id="deadline" name="deadline" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="file-upload" class="form-label">Upload Document (Optional)</label>
+                        <input type="file" id="file-upload" name="file-upload" class="form-control"
+                            accept=".pdf,.doc,.docx,.txt">
+                        <small style="display: block; margin-top: 5px; color: #666;">Accepts PDF, Word, or Text
+                            files.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="details" class="form-label">Project Details</label>
+                        <textarea id="details" name="details" class="form-control"
+                            placeholder="Please describe your requirements..." required></textarea>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Request</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3>Write Steps <span class="accent">Solution</span></h3>
+                <p>Empowering students to achieve academic excellence through expert guidance and specialized support.
+                </p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="consultation.html">Book Consultation</a></li>
+                    <li><a href="blog.html">Resources</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p><i class="fas fa-envelope"></i> info@writestepssolution.com</p>
+                <p><i class="fab fa-whatsapp"></i> +1 234 567 890</p>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2024 Write Steps Solution. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        document.getElementById('consultationForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Thank you for your request! We will contact you shortly.');
+            this.reset();
+        });
+
+        // Pre-select service if passed in URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const service = urlParams.get('service');
+        if (service) {
+            const select = document.getElementById('service');
+            if (select.querySelector(`option[value="${service}"]`)) {
+                select.value = service;
+            }
+        }
+    </script>
+</body>
+
+</html>
