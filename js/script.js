@@ -5,8 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (mobileBtn) {
         mobileBtn.addEventListener('click', () => {
-            nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
-            // Add a class for better styling control instead of inline styles in production
+            // Toggle the active class which controls visibility in CSS
             nav.classList.toggle('active');
         });
     }
